@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     ListView ListViewLog;
     ArrayAdapter arrayAdapter;
     Button btn_view;
+    StubRepo stubRepo;
 
 
     @SuppressLint("MissingInflatedId")
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         set = findViewById(R.id.numSet3);
         reps = findViewById(R.id.numRepoa3);
         date = findViewById(R.id.dateTime3);
+
 
     }
     public void onBtnAddClick(View view) {
