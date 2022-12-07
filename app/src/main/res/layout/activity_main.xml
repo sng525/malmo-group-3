@@ -9,7 +9,7 @@
     <EditText
         android:id="@+id/txtActivity"
         android:layout_width="211dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="Your Activity"
@@ -22,7 +22,7 @@
     <EditText
         android:id="@+id/numWeight"
         android:layout_width="211dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Weight"
@@ -97,5 +97,18 @@
         android:text="View Log"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dateTime" />
+
+    <ListView
+        android:id="@+id/ListViewLog"
+        android:layout_width="409dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="524dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
