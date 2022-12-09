@@ -22,15 +22,14 @@ public class MainActivity extends AppCompatActivity {
     ListView ListViewLog;
     ArrayAdapter arrayAdapter;
     Button btn_view;
-
-
+    StubRepo stubRepo;
 
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.logview);
+        setContentView(R.layout.activity_main);
 
         activity = findViewById(R.id.txtActivityp2);
         weight = findViewById(R.id.numWeight3);
@@ -58,5 +57,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ViewAll.class);
         startActivity(intent);
     }
-
 }
