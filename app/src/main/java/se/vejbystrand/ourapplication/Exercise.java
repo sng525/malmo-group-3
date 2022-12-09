@@ -11,13 +11,13 @@ public class Exercise {
         private static String date;
 
 
-        public Exercise(int id, String activity, int weight, int set, int reps, CharSequence date) {
+        public Exercise(int id, String activity, int weight, int set, int reps, String date) {
             this.id = id;
-            activity = activity;
-            weight = weight;
-            set = set;
-            reps = reps;
-            date = date;
+            this.activity = activity;
+            this.weight = weight;
+            this.set = set;
+            this.reps = reps;
+            this.date = date;
 
         }
 
