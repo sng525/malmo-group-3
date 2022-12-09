@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         reps = findViewById(R.id.num_reps);
         date = findViewById(R.id.date_time);
 
-        onBtnAddClick();
+       // onBtnAddClick();
 
         /*workoutListView = findViewById(R.id.workout_list_view);
         db = new DatabaseHelper(MainActivity.this);
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         workoutListView.setLayoutManager(new LinearLayoutManager(this));*/
 
     }
-
+/*
     private void onBtnAddClick() {
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+*/
     public void onBtnViewClick(View view) {
         Intent intent = new Intent(this, ViewAll.class);
         startActivity(intent);

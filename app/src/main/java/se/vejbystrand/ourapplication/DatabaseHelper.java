@@ -6,11 +6,13 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import android.content.ContentValues;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -22,7 +24,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_SETS = "COLUMN_SETS";
     public static final String COLUMN_REPS = "COLUMN_REPS";
     public static final String COLUMN_DATE = "COLUMN_DATE";
-
+    SQLiteOpenHelper sqlite;
 
     //CONSTRUCTOR
     public DatabaseHelper(@Nullable Context context) {
@@ -65,6 +67,31 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    public void save(Exercise exercise) {
+        if(exercise.getId() == 0)   // if the id is 0, the book does not exist
+            insertWorkout(exercise);   // therefore insert it
+
+    }
+
+    private void insertWorkout(Exercise exercise) {
+
+        SQLiteDatabase db = sqlite.getWritableDatabase();
+        ContentValues c = getContentValues(exercise);
+        db.insert(WORKOUTS_TABLE, null, c);
+    }
+
+    @NonNull
+    private ContentValues getContentValues(Exercise exercise) {
+        // Creates the column-value pairs given a book
+        ContentValues c = new ContentValues();
+        c.put("activity", exercise.getActivity());
+        c.put("weight", exercise.getWeight());
+        c.put("set", exercise.getSet());
+        c.put("reps", exercise.getReps());
+        c.put("date", exercise.getDate());
+
+        return c;
+    }
 //CREATE METHODS TO PULL ALL ITEMS OUT OF THE DATABASE
 
 //DEFINE THE PROPERTIES THAT WE WANT THE LIST TO RETURN
@@ -94,4 +121,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         return returnList;
     }
+
+
 }
+
+

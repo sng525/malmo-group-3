@@ -81,7 +81,7 @@
         android:layout_marginTop="112dp"
         android:layout_marginEnd="88dp"
         android:clickable="true"
-        android:onClick="onBtnAddClick"
+        android:onClick="onBtnViewClick"
         app:layout_constraintEnd_toStartOf="@+id/btn_view_all"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
