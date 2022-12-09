@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.logview);
+        setContentView(R.layout.recy_view);
 
     }
 

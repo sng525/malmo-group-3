@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     ListView ListViewLog;
     ArrayAdapter arrayAdapter;
     Button btn_view;
-    StubRepo stubRepo;
+    DatabaseHelper db;
 
 
     @SuppressLint("MissingInflatedId")
@@ -31,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        activity = findViewById(R.id.txtActivityp2);
-        weight = findViewById(R.id.numWeight3);
-        set = findViewById(R.id.numSet3);
-        reps = findViewById(R.id.numRepoa3);
-        date = findViewById(R.id.dateTime3);
+        activity = findViewById(R.id.txtActivity);
+        weight = findViewById(R.id.numWeight);
+        set = findViewById(R.id.numSet);
+        reps = findViewById(R.id.numRepoa);
+        date = findViewById(R.id.dateTime);
 
 
 
@@ -50,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
             exercise = new Exercise(-1, "error", 0, 0, 0, "error");
             Toast.makeText(this, "Write correct in the lines", Toast.LENGTH_SHORT).show();
         }
+
+        db = new DatabaseHelper(MainActivity.this);
+        db.addWorkout(exercise);
+
     });
 
     }

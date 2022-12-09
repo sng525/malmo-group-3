@@ -3,75 +3,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
     android:orientation="vertical">
 
-    <EditText
+    <TextView
+        android:id="@+id/txtActivityId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="1" />
+
+    <TextView
         android:id="@+id/txtActivityp2"
-        android:layout_width="211dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="Your Activity"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.278"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="20sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/numWeight3"
-        android:layout_width="211dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="Weight"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtActivity" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="The Weight"
+        android:textSize="20sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/numSet3"
-        android:layout_width="211dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="Set"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numWeight" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="The Set"
+        android:textSize="20sp"/>
 
-    <EditText
+    <TextView
         android:id="@+id/numRepoa3"
-        android:layout_width="211dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="Reps"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numSet" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="The Reps"
+        android:textSize="20sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/dateTime3"
-        android:layout_width="211dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="Date"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numRepoa"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="The Date"
+        android:textSize="20sp" />
 
 </LinearLayout>
