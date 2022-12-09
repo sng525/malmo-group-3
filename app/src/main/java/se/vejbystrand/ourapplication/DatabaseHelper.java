@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,40 +58,40 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         cv.put(COLUMN_DATE, Exercise.getDate());
 
         long insert = db.insert(WORKOUTS_TABLE, null, cv);
-             if (insert == -1) {
-                 return false;
-             }
-             else{
-                 return true;
-             }
+        if (insert == -1) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
 //CREATE METHODS TO PULL ALL ITEMS OUT OF THE DATABASE
 
 //DEFINE THE PROPERTIES THAT WE WANT THE LIST TO RETURN
 
-   /* public List<Exercise> selectAll() {
-        List<Exercise> returnList = new ArrayList<>();
+    public ArrayList<Exercise> selectAll() {
+        ArrayList<Exercise> returnList = new ArrayList<>();
 
-        String queryString = "SELECT * FROM " + WORKOUTS_TABLE;
+        String queryString = "SELECT * FROM WORKOUTS_TABLE" + WORKOUTS_TABLE;
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(queryString);                   //EXECUTES QUERY
+        Cursor cursor = db.rawQuery(queryString, null);                   //EXECUTES QUERY
 
-            if (cursor.moveToFirst()) {
-                do{
-                    int id = cursor.getInt(0);
-                    String activity = cursor.getString(1);
-                    int weights = cursor.getInt(2);
-                    int sets = cursor.getInt(3);
-                    int reps = cursor.getInt(4);
-                    String date = cursor.getString(5);
-                    
-                    Exercise newWorkout = new Exercise(id, activity, weights, sets, reps, date);
+        if (cursor.moveToFirst()) {
+            do {
+                int id = cursor.getInt(0);
+                String activity = cursor.getString(1);
+                int weights = cursor.getInt(2);
+                int sets = cursor.getInt(3);
+                int reps = cursor.getInt(4);
+                String date = cursor.getString(5);
+
+                Exercise newWorkout = new Exercise(id, activity, weights, sets, reps, date);
 
 
-                }while (cursor.moveToFirst());
+            } while (cursor.moveToFirst());
 
+            cursor.close();
+        }
         return returnList;
-
-    }*/
+    }
 }

@@ -18,35 +18,35 @@
         android:text="1" />
 
     <TextView
-        android:id="@+id/txtActivityp2"
+        android:id="@+id/txtActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Your Activity"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/numWeight3"
+        android:id="@+id/numWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="The Weight"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/numSet3"
+        android:id="@+id/numSet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="The Set"
         android:textSize="20sp"/>
 
     <TextView
-        android:id="@+id/numRepoa3"
+        android:id="@+id/numReps"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="The Reps"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/dateTime3"
+        android:id="@+id/datetime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="The Date"

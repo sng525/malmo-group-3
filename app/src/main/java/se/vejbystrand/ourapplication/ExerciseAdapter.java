@@ -25,7 +25,7 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ViewHo
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View itemView = inflater.inflate(R.layout.logview, parent, false);
+        View itemView = inflater.inflate(R.layout.view_log_item, parent, false);
 
         ViewHolder holder = new ViewHolder(itemView);
 
@@ -57,11 +57,11 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ViewHo
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             txtId = itemView.findViewById(R.id.txtActivityId);
-            txtAcitivty = itemView.findViewById(R.id.txtActivityp2);
-            txtWeight = itemView.findViewById(R.id.numWeight3);
-            txtSet = itemView.findViewById(R.id.numSet3);
-            txtReps = itemView.findViewById(R.id.numRepoa3);
-            txtDate = itemView.findViewById(R.id.dateTime3);
+            txtAcitivty = itemView.findViewById(R.id.txtActivity);
+            txtWeight = itemView.findViewById(R.id.numWeight);
+            txtSet = itemView.findViewById(R.id.numSet);
+            txtReps = itemView.findViewById(R.id.numReps);
+            txtDate = itemView.findViewById(R.id.datetime);
         }
     }
 }

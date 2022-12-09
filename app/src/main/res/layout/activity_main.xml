@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/txtActivity"
+        android:id="@+id/txt_activity"
         android:layout_width="211dp"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/numWeight"
+        android:id="@+id/num_weight"
         android:layout_width="211dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
@@ -30,10 +30,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtActivity" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_activity" />
 
     <EditText
-        android:id="@+id/numSet"
+        android:id="@+id/num_set"
         android:layout_width="211dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
@@ -43,10 +43,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numWeight" />
+        app:layout_constraintTop_toBottomOf="@+id/num_weight" />
 
     <EditText
-        android:id="@+id/numRepoa"
+        android:id="@+id/num_reps"
         android:layout_width="211dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
@@ -56,10 +56,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numSet" />
+        app:layout_constraintTop_toBottomOf="@+id/num_set" />
 
     <EditText
-        android:id="@+id/dateTime"
+        android:id="@+id/date_time"
         android:layout_width="211dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
@@ -70,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numRepoa"
+        app:layout_constraintTop_toBottomOf="@+id/num_reps"
         app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -81,22 +81,23 @@
         android:layout_marginTop="112dp"
         android:layout_marginEnd="88dp"
         android:clickable="true"
-        app:layout_constraintEnd_toStartOf="@+id/btn_view"
+        android:onClick="onBtnAddClick"
+        app:layout_constraintEnd_toStartOf="@+id/btn_view_all"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateTime"
+        app:layout_constraintTop_toBottomOf="@+id/date_time"
         app:srcCompat="@drawable/ic_add"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/btn_view"
+        android:id="@+id/btn_view_all"
         android:layout_width="121dp"
         android:layout_height="61dp"
         android:layout_marginTop="104dp"
         android:layout_marginEnd="84dp"
-        android:onClick="onBtnAddClick"
+        android:onClick="onBtnViewClick"
         android:text="View Log"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateTime" />
+        app:layout_constraintTop_toBottomOf="@+id/date_time" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
