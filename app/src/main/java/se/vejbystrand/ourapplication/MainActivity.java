@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_add.setOnClickListener(view -> {
             try {
-                exercise = new Exercise(0,
+                exercise = new Exercise(-1,
                         activity.getText().toString(),
                         Integer.parseInt(weight.getText().toString()),
                         Integer.parseInt(set.getText().toString()),
