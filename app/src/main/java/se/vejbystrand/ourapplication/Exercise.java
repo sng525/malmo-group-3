@@ -4,11 +4,11 @@ public class Exercise {
 
 
         private int id;
-        private static String activity;
-        private static int weight;
-        private static int set;
-        private static int reps;
-        private static String date;
+        private String activity;
+        private int weight;
+        private int set;
+        private int reps;
+        private String date;
 
 
         public Exercise(int id, String activity, int weight, int set, int reps, String date) {
@@ -30,7 +30,7 @@ public class Exercise {
             this.id = id;
         }
 
-        public static String getActivity() {
+        public String getActivity() {
             return activity;
         }
 
@@ -38,7 +38,7 @@ public class Exercise {
             this.activity = activity;
         }
 
-        public static int getWeight() {
+        public int getWeight() {
             return weight;
         }
 
@@ -46,7 +46,7 @@ public class Exercise {
             this.weight = weight;
         }
 
-        public static int getSet() {
+        public int getSet() {
             return set;
         }
 
@@ -54,7 +54,7 @@ public class Exercise {
             this.set = set;
         }
 
-        public static int getReps() {
+        public int getReps() {
             return reps;
         }
 
@@ -62,7 +62,7 @@ public class Exercise {
             this.reps = reps;
         }
 
-        public static String getDate() {
+        public String getDate() {
             return date;
         }
 

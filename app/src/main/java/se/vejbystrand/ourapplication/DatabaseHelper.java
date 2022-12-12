@@ -56,11 +56,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
-        cv.put(COLUMN_ACTIVITY, Exercise.getActivity());
-        cv.put(COLUMN_WEIGHT, Exercise.getWeight());
-        cv.put(COLUMN_SETS, Exercise.getSet());
-        cv.put(COLUMN_REPS, Exercise.getReps());
-        cv.put(COLUMN_DATE, Exercise.getDate());
+        cv.put(COLUMN_ACTIVITY, exercise.getActivity());
+        cv.put(COLUMN_WEIGHT, exercise.getWeight());
+        cv.put(COLUMN_SETS, exercise.getSet());
+        cv.put(COLUMN_REPS, exercise.getReps());
+        cv.put(COLUMN_DATE, exercise.getDate());
 
         long insert = db.insert(WORKOUTS_TABLE, null, cv);
         if (insert == -1) {
@@ -116,11 +116,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // Creates the column-value pairs given a book
         ContentValues c = new ContentValues();
 
-        c.put(COLUMN_ACTIVITY, Exercise.getActivity());
-        c.put(COLUMN_WEIGHT, Exercise.getWeight());
-        c.put(COLUMN_SETS, Exercise.getSet());
-        c.put(COLUMN_REPS, Exercise.getReps());
-        c.put(COLUMN_DATE, Exercise.getDate());
+        c.put(COLUMN_ACTIVITY, exercise.getActivity());
+        c.put(COLUMN_WEIGHT, exercise.getWeight());
+        c.put(COLUMN_SETS, exercise.getSet());
+        c.put(COLUMN_REPS, exercise.getReps());
+        c.put(COLUMN_DATE, exercise.getDate());
 
         return c;
     }
