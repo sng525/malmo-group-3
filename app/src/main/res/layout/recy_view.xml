@@ -10,7 +10,6 @@
         android:id="@+id/workout_list_view"
         android:layout_width="409dp"
         android:layout_height="729dp"
-        android:background="#ED5F00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
