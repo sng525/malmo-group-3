@@ -1,4 +1,12 @@
 <resources>
-    <string name="app_name" translatable="false">Our Application</string>
     <string name="hello_world">Hello World</string>
+    <string name="yourActivity">Your Activity</string>
+    <string name="successful_add">Successfully added</string>
+    <string name="weight">Weight</string>
+    <string name="set">Set</string>
+    <string name="reps">Reps</string>
+    <string name="date">Year - Month - Day</string>
+    <string name="viewlog">View Log</string>
+    <string name="app_name">Training Diary</string>
+    <string name="Error_add">Error creating workout</string>
 </resources>

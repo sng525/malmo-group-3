@@ -40,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
                         Integer.parseInt(set.getText().toString()),
                         Integer.parseInt(reps.getText().toString()),
                         date.getText().toString());
-                Toast.makeText(MainActivity.this, "Successfully added", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, R.string.successful_add, Toast.LENGTH_SHORT).show();
             } catch (Exception e) {
                 exercise = new Exercise(-1, "error", 0, 0, 0, "error");
-                Toast.makeText(MainActivity.this, "Error creating workout", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, R.string.Error_add, Toast.LENGTH_SHORT).show();
             }
 
             db = DatabaseHelper.getInstance(getApplicationContext());

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weight">重量</string>
+    <string name="successful_add">添加成功</string>
+    <string name="yourActivity">健身动作</string>
+    <string name="reps">组</string>
+    <string name="set">次</string>
+    <string name="date">年 - 月 - 日</string>
+    <string name="viewlog">查看记录</string>
+    <string name="app_name">健身日记</string>
+    <string name="hello_world">你好世界</string>
+    <string name="Error_add">添加失败</string>
+</resources>

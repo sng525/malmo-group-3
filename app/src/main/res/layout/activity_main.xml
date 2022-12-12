@@ -13,7 +13,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="80dp"
         android:ems="10"
-        android:hint="Your Activity"
+        android:hint="@string/yourActivity"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="48dp"
         android:ems="10"
-        android:hint="Weight"
+        android:hint="@string/weight"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="48dp"
         android:ems="10"
-        android:hint="Set"
+        android:hint="@string/set"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +49,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="48dp"
         android:ems="10"
-        android:hint="Reps"
+        android:hint="@string/reps"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,13 +61,13 @@
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:ems="10"
-        android:hint="Year - Month - Day"
+        android:hint="@string/date"
         android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/num_reps"
-        app:layout_constraintVertical_bias="0.059" />
+        app:layout_constraintVertical_bias="0.051" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_add"
@@ -91,8 +91,9 @@
         android:layout_height="61dp"
         android:layout_marginTop="132dp"
         android:layout_marginEnd="144dp"
+        android:hint="@string/viewlog"
         android:onClick="onBtnViewClick"
-        android:text="View Log"
+        android:text="@string/viewlog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/date_time" />
 

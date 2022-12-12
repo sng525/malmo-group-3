@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Our Application</string>
     <string name="hello_world">Hej Världen</string>
+    <string name="weight">Vikt</string>
+    <string name="successful_add">Korrekt Tillagd</string>
+    <string name="yourActivity">Övning</string>
+    <string name="set">Set</string>
+    <string name="reps">Repetition</string>
+    <string name="date">År - Månad - Dag</string>
+    <string name="viewlog">Loggbok</string>
+    <string name="app_name" translatable="false">Tränings Bok</string>
+    <string name="Error_add">Fel Tillagd</string>
 </resources>
