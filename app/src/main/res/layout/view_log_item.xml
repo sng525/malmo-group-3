@@ -7,49 +7,66 @@
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     android:paddingBottom="20dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#ED5F00"
+    >
 
     <TextView
         android:id="@+id/txtActivityId"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:text="1" />
+        android:paddingLeft="20dp"
+        android:text="1"
+        />
+
 
     <TextView
         android:id="@+id/txtActivity"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Your Activity"
+        android:paddingLeft="20dp"
         android:textSize="20sp" />
 
     <TextView
         android:id="@+id/numWeight"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="The Weight"
-        android:textSize="20sp" />
+        android:paddingLeft="20dp"
+        android:textSize="15sp" />
+
 
     <TextView
         android:id="@+id/numSet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="The Set"
-        android:textSize="20sp"/>
+        android:paddingLeft="20dp"
+        android:textSize="15sp"/>
+
 
     <TextView
         android:id="@+id/numReps"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="The Reps"
-        android:textSize="20sp" />
+        android:paddingLeft="20dp"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/datetime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="The Date"
-        android:textSize="20sp" />
+        android:paddingLeft="20dp"
+        android:textSize="15sp" />
 
 </LinearLayout>
