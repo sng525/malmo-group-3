@@ -10,4 +10,5 @@
     <string name="viewlog">Loggbok</string>
     <string name="app_name" translatable="false">Tränings Bok</string>
     <string name="Error_add">Fel Tillagd</string>
+    <string name="btn_add">Lägg Till</string>
 </resources>

@@ -1,6 +1,7 @@
 package se.vejbystrand.ourapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +21,6 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ViewHo
         this.exercises = exercises;
     }
 
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -29,21 +29,25 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ViewHo
 
         ViewHolder holder = new ViewHolder(itemView);
 
+        // click in to edit or delete page
+        itemView.setOnClickListener(view -> {
+            Intent intent = new Intent(context, EditDeleteActivity.class);
+            intent.putExtra("id", Integer.valueOf(holder.txtId.getText().toString()));
+            context.startActivity(intent);
+        });
 
         return holder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
         Exercise exercise = exercises.get(position);
         holder.txtId.setText(String.valueOf(exercise.getId()));
-        holder.txtAcitivty.setText(String.valueOf(exercise.getActivity()));
+        holder.txtActivity.setText(String.valueOf(exercise.getActivity()));
         holder.txtWeight.setText(String.valueOf(exercise.getWeight()));
         holder.txtSet.setText(String.valueOf(exercise.getSet()));
         holder.txtReps.setText(String.valueOf(exercise.getReps()));
         holder.txtDate.setText(String.valueOf(exercise.getDate()));
-
     }
 
     @Override
@@ -52,12 +56,12 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ViewHo
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public final TextView txtId, txtAcitivty, txtWeight, txtSet, txtReps, txtDate;
+        public final TextView txtId, txtActivity, txtWeight, txtSet, txtReps, txtDate;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             txtId = itemView.findViewById(R.id.txtActivityId);
-            txtAcitivty = itemView.findViewById(R.id.txtActivity);
+            txtActivity = itemView.findViewById(R.id.txtActivity);
             txtWeight = itemView.findViewById(R.id.numWeight);
             txtSet = itemView.findViewById(R.id.numSet);
             txtReps = itemView.findViewById(R.id.numReps);

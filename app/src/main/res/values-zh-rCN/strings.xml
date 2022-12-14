@@ -10,4 +10,5 @@
     <string name="app_name">健身日记</string>
     <string name="hello_world">你好世界</string>
     <string name="Error_add">添加失败</string>
+    <string name="btn_add">添加</string>
 </resources>

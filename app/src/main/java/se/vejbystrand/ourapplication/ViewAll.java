@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class ViewAll extends AppCompatActivity {
 
-    DatabaseHelper db;
+    ExerciseRepo db;
     RecyclerView workoutListView;
     ExerciseAdapter adapter;
 
@@ -17,14 +17,13 @@ public class ViewAll extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recy_view);
 
-        db = DatabaseHelper.getInstance(getApplicationContext());
+        db = ExerciseRepo.getInstance(getApplicationContext());
 
         // Binding the Adapter to the RecyclerView
         workoutListView = findViewById(R.id.workout_list_view);
-        adapter = new ExerciseAdapter(ViewAll.this, db.selectAll());
+        adapter = new ExerciseAdapter(ViewAll.this, db.findAllExercises());
         workoutListView.setAdapter(adapter);
-        workoutListView.setLayoutManager(new LinearLayoutManager(this));
-
+        workoutListView.setLayoutManager(new LinearLayoutManager(ViewAll.this));
     }
 
 }

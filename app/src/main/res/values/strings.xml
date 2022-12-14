@@ -8,5 +8,6 @@
     <string name="date">Year - Month - Day</string>
     <string name="viewlog">View Log</string>
     <string name="app_name">Training Diary</string>
-    <string name="Error_add">Error creating workout</string>
+    <string name="Error_add">Item can\'t be empty</string>
+    <string name="btn_add">Add</string>
 </resources>

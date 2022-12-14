@@ -10,6 +10,10 @@ public class Exercise {
         private int reps;
         private String date;
 
+        public Exercise(){
+            id = weight = set = reps = 0;
+            activity = date = "";
+        }
 
         public Exercise(int id, String activity, int weight, int set, int reps, String date) {
             this.id = id;
@@ -21,52 +25,57 @@ public class Exercise {
 
         }
 
-
         public int getId() {
             return id;
         }
 
-        public void setId(int id) {
+        public Exercise setId(int id) {
             this.id = id;
+            return this;
         }
 
         public String getActivity() {
             return activity;
         }
 
-        public void setActivity(String activity) {
+        public Exercise setActivity(String activity) {
             this.activity = activity;
+            return this;
         }
 
         public int getWeight() {
             return weight;
         }
 
-        public void setWeight(int weight) {
+        public Exercise setWeight(int weight) {
             this.weight = weight;
+            return this;
         }
 
         public int getSet() {
             return set;
         }
 
-        public void setSet(int set) {
+        public Exercise setSet(int set) {
             this.set = set;
+            return this;
         }
 
         public int getReps() {
             return reps;
         }
 
-        public void setReps(int reps) {
+        public Exercise setReps(int reps) {
             this.reps = reps;
+            return this;
         }
 
         public String getDate() {
             return date;
         }
 
-        public void setDate(String date) {
+        public Exercise setDate(String date) {
             this.date = date;
+            return this;
         }
 }
