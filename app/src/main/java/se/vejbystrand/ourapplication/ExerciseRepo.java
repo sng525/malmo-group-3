@@ -96,29 +96,6 @@ public class ExerciseRepo implements Repository{
         db.update(TABLE_NAME, cv, "id = ?", whereArgs);
     }
 
- /*   public boolean addWorkout(Exercise exercise) {
-
-        //REFERS TO THE DATABASE CREATED
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues cv = new ContentValues();
-
-        cv.put(COLUMN_ACTIVITY, exercise.getActivity());
-        cv.put(COLUMN_WEIGHT, exercise.getWeight());
-        cv.put(COLUMN_SETS, exercise.getSet());
-        cv.put(COLUMN_REPS, exercise.getReps());
-        cv.put(COLUMN_DATE, exercise.getDate());
-
-        long insert = db.insert(WORKOUTS_TABLE, null, cv);
-        if (insert == -1) {
-            return false;
-        } else {
-            return true;
-        }
-    }*/
-
-
-
-    // TODO: 2022-12-14 we dont understand this method.
     private String[] getWhereArgs(int id) {
         String[] whereArgs = {String.valueOf(id)};
         return whereArgs;
