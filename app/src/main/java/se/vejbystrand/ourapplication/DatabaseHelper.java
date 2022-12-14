@@ -101,7 +101,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return returnList;
     }
 
-    //WE KNOW
     public void save(Exercise exercise) {
         if(exercise.getId() == 0)   // if the id is 0, the book does not exist
             insertWorkOut(exercise);   // therefore insert it
