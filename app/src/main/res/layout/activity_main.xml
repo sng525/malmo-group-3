@@ -69,15 +69,15 @@
         app:layout_constraintTop_toBottomOf="@+id/num_reps"
         app:layout_constraintVertical_bias="0.059" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <Button
         android:id="@+id/btn_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="176dp"
-        android:clickable="true"
-        android:onClick="onBtnViewClick"
-        app:backgroundTint="@color/white"
+        android:layout_width="121dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="144dp"
+        android:onClick="onBtnAdd"
+        android:text="@string/btn_add"
+        app:backgroundTint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/btn_view_all"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/date_time"
